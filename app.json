@@ -1,6 +1,10 @@
 {
   "expo": {
     "name": "rn-shop",
+    "scheme": "rn-shop",
+    "experiments": {
+    "typedRoutes": true
+    },
     "slug": "rn-shop",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,7 +28,11 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
